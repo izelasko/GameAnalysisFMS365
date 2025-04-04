@@ -1,0 +1,395 @@
+
+
+
+@font-face {
+    font-family: 'SimpleLetter';
+    src: url('SimpleLetter.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'CuteNotes';
+    src: url('CuteNotes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#wrapper{
+    display:grid;
+    width:100%;
+    margin-top:0;
+    margin-left:0;
+    margin-right:0;
+    background-color: rgb(217,217,217);
+}
+
+body{
+    margin:0px;
+}
+
+header{
+    font-family:'CuteNotes';
+    font-size: 80px;
+    text-align:center;
+    color:rgb(233,199,144);
+    text-shadow: 
+        -3px -3px 0 rgb(67, 66, 86), 
+         3px -3px 0 rgb(67, 66, 86), 
+        -3px  3px 0 rgb(67, 66, 86), 
+         3px  3px 0 rgb(67, 66, 86);
+    background-color: rgb(149,66,35);
+    padding:20px;
+    
+    
+}
+
+header a{
+    font-size:80px !important;
+    font-family:'CuteNotes';
+}
+
+header h1{
+    font-family:'SimpleLetter';
+    text-align:center;
+    color:rgb(217,217,217);
+    font-size:38px;
+    padding-top:20px;
+    margin:0px;
+    margin-bottom:20px;
+    text-shadow:none;
+    
+}
+
+
+
+nav{
+    
+    font-family:'SimpleLetter';
+    display:block;
+    background-color:rgb(100,48,40);
+    height:auto;
+    font-size:34px;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    
+    
+}
+
+main {
+    position:relative;
+    display:flex;
+    z-index:0;
+    padding: 0px;
+    width: 100%;
+    height:auto;
+    margin: 0px;
+    background-image:url(header.jpg);
+    background-size:cover;
+    justify-content:center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.one{
+    display:block;
+    position:relative;
+    z-index:2;
+    background-color:beige;
+    justify-content:center;
+    align-items:center;
+    width:90%;
+    height:auto;
+    padding: 0px;
+}
+
+.one h1{
+    text-align:center;
+    font-family:'SimpleLetter';
+    font-size:50px;
+    opacity:1;
+    color:black;
+}
+
+.one p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    margin:45px;
+    padding:10px;
+    padding-bottom:0px;
+
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.img1 img {
+    width: 100%; /* or use max-width: 100% if you want it to stay within the container without stretching */
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between; /* or 'center' if you want them close together */
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    gap: 20px; /* space between images */
+}
+
+.image-row img {
+    width: 30%; /* Each image takes roughly 1/3 of the row */
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the space while maintaining aspect ratio */
+
+}
+
+
+.gameDesignHeader{
+    background-color:rgb(162, 159, 209);
+    display:block;
+    width:100%;
+    height:auto;
+    margin:0px;
+}
+
+.gameDesignHeader h1{
+    margin:0px;
+    padding:60px;
+    
+
+}
+
+.gameDesign{
+    background-color:rgb(233,199,144);
+    float:right;
+    width:60%;
+    height:auto;
+    justify-content:center;
+    
+}
+
+.gameDesign h1{
+    padding-top:0px;
+}
+
+.gameDesign p{
+    text-align:start;
+    padding-top:0px;
+    margin-top:0px;
+    margin-bottom:200px;
+    font-size:18px !important;
+}
+
+.gamePlay .narrative .playerExperience p{
+    text-align:left;
+    padding-top:0px;
+    margin-top:0px;
+    margin-bottom:20px;
+    font-size:32px !important;
+}
+
+.gameDesign2{
+    display:flex;
+    float:left;
+    background-color:rgb(233,199,144);
+    width: 40%;
+    height:auto;
+
+
+}
+
+
+.gameDesign2 img{
+    display:flex;
+    flex-direction:column;
+    float:left;
+    object-fit:contain;
+    align-items:center;
+    justify-items:center;
+    width:80%;
+    height:30%;
+    margin:0px;
+    padding:0px;
+}
+
+.gameDesign h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:48px;
+    color:black;
+    text-align:center;
+    padding-top:39px;
+
+}
+
+.gamePlay h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:48px;
+    color:black;
+    text-align:center;
+
+}
+
+.narrative h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:48px;
+    color:black;
+    text-align:center;
+
+}
+
+.playerExperience h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:48px;
+    color:black;
+    padding-top:10px;
+
+}
+
+.gamePlay{
+    float:left;
+    display:block;
+    background-color:rgb(233,199,144);
+    width:100%;
+    height:auto;
+    text-align:left;
+}
+
+.narrative {
+    float:left;
+    display:block;
+    background-color:rgb(233,199,144);
+    width:60%;
+    height:auto;
+    justify-content:center;
+    padding-bottom:1px;
+}
+
+.playerExperience{
+    float:left;
+    display:block;
+    background-color:rgb(233,199,144);
+    width:100%;
+    height:auto;
+    justify-content:center;
+}
+
+.citations{
+    float:left;
+    display:block;
+    background-color:rgb(101, 72, 26);
+    width:100%;
+    height:auto;
+    justify-content:center;
+}
+
+.citations h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+    color:rgb(233,199,144);
+    padding-top:5px;
+}
+
+.citations p{
+    font-size:15px;
+    text-align:left;
+    color:rgb(233,199,144);
+}
+
+
+.video{
+    display:block;
+    float:right;
+    background-color:rgb(162, 159, 209);
+    width: 40%;
+    padding-top:10px;
+    padding-bottom:663px;
+    height:940px;
+}
+
+.video h2{
+    padding-top:100px;
+    margin-top:100px;
+    text-align:center;
+    font-family:'SimpleLetter';
+    font-size:50px;
+    opacity:1;
+    color:black;
+}
+
+iframe{
+    width:100%;
+    height:50%;
+    float:right;
+    display:flex;
+    justify-content:center;
+    object-fit:contain;
+    margin-bottom:50px;
+    
+}
+
+.video p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:link {
+    color: rgb(233,199,144) !important;
+}
+
+a:-webkit-any-link {
+    all:unset;
+}
+
+
+a:hover {
+    color: rgb(162, 159, 209);
+}
+
+
+
+nav ul {
+    display:flex;
+    list-style-type:none;
+    color: rgb(233,199,144);
+    font-size:34px;
+    justify-content:space-around;
+}
+
+footer{
+    background-color:rgb(100,48,40);
+    width:100%;
+    height:auto;
+    font-family:'SimpleLetter';
+    color: rgb(233,199,144);
+    font-size:64px;
+    text-align:center;
+}
+
+
+
